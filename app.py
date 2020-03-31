@@ -6,7 +6,6 @@ import time
 import lxml
 import tqdm
 import re
-import os
 
 """ ____           _          __        
    / __ \\ ____   (_)____    / /_ __  __
@@ -18,9 +17,6 @@ Endpoint locator/scraper. Useful for finding endpoints.
 Written by Luke Davis (http://luke.onl)
 MIT License
 """
-
-def cls():
-	os.system('cls' if os.name=='nt' else 'clear')
 
 class IncorrectHeaderType(Exception):
    """Raised when the headers are incorrect type"""
